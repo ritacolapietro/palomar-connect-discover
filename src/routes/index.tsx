@@ -172,16 +172,16 @@ function HomePage() {
               Curiosity, in the <span className="italic">field</span>.
             </h2>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              People exploring environments. Learning about a territory. Working together
-              on something real, beyond the office walls.
+              People exploring environments and meeting communities. Learning a territory
+              from the inside. Working together on something real, beyond the office walls.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { src: fieldworkImage, title: "Observe", caption: "Hands in the water." },
-              { src: collaborationImage, title: "Collaborate", caption: "Teams, mapping a coast.", offset: true },
-              { src: seagrassImage, title: "Discover", caption: "A meadow of seagrass." },
+              { src: territoryImage, title: "Environment", caption: "A territory, observed." },
+              { src: communityImage, title: "Community", caption: "People, in conversation.", offset: true },
+              { src: observationImage, title: "Knowledge", caption: "Notes that matter." },
             ].map(({ src, title, caption, offset }) => (
               <figure
                 key={title}
