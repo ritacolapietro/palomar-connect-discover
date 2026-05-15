@@ -10,11 +10,10 @@ import {
   Heart,
 } from "lucide-react";
 import heroImage from "@/assets/hero-mediterranean.jpg";
-import fieldworkImage from "@/assets/experience-fieldwork.jpg";
-import collaborationImage from "@/assets/experience-collaboration.jpg";
-import seagrassImage from "@/assets/experience-seagrass.jpg";
-import coastImage from "@/assets/solution-coast.jpg";
-import seaImage from "@/assets/vision-sea.jpg";
+import communityImage from "@/assets/experience-community.jpg";
+import territoryImage from "@/assets/experience-territory.jpg";
+import observationImage from "@/assets/experience-observation.jpg";
+import regionImage from "@/assets/vision-region.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
