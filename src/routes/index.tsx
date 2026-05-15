@@ -296,7 +296,7 @@ function HomePage() {
               {
                 icon: GraduationCap,
                 title: "Learning",
-                body: "Scientific literacy and a closer relationship with the natural world.",
+                body: "A closer understanding of environments, communities and cultures.",
               },
               {
                 icon: Users,
@@ -318,24 +318,25 @@ function HomePage() {
       <section id="vision" className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={seaImage}
-            alt="A sailing vessel on the deep Mediterranean"
+            src={regionImage}
+            alt="A Mediterranean city seen from above, blending architecture, parks and the sea"
             className="h-full w-full object-cover"
             loading="lazy"
             width={1600}
             height={1000}
           />
-          <div className="absolute inset-0 bg-primary/60" />
+          <div className="absolute inset-0 bg-primary/65" />
         </div>
         <div className="relative py-32 lg:py-48 px-6 lg:px-16 text-primary-foreground">
           <div className="max-w-3xl mx-auto text-center">
             <Eyebrow>Our vision</Eyebrow>
             <h2 className="mt-8 font-display text-4xl md:text-5xl lg:text-6xl italic leading-[1.1]">
-              A Mediterranean of companies, people and researchers — together.
+              A Mediterranean of cities, communities and researchers — working together.
             </h2>
             <p className="mt-10 text-lg text-primary-foreground/80 max-w-xl mx-auto leading-relaxed">
-              We believe the future of this sea will be written by those who choose to
-              understand it. Palomar is the bridge that brings them into the same room.
+              The Mediterranean is more than a sea. It is territories, cultures and people
+              facing shared environmental and social challenges. Palomar is the bridge that
+              brings them — and you — into the same conversation.
             </p>
           </div>
         </div>
