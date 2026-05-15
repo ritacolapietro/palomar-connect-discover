@@ -10,11 +10,10 @@ import {
   Heart,
 } from "lucide-react";
 import heroImage from "@/assets/hero-mediterranean.jpg";
-import fieldworkImage from "@/assets/experience-fieldwork.jpg";
-import collaborationImage from "@/assets/experience-collaboration.jpg";
-import seagrassImage from "@/assets/experience-seagrass.jpg";
-import coastImage from "@/assets/solution-coast.jpg";
-import seaImage from "@/assets/vision-sea.jpg";
+import communityImage from "@/assets/experience-community.jpg";
+import territoryImage from "@/assets/experience-territory.jpg";
+import observationImage from "@/assets/experience-observation.jpg";
+import regionImage from "@/assets/vision-region.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -62,13 +61,14 @@ function HomePage() {
             <h1 className="mt-6 font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-foreground text-balance">
               Engage your people.
               <br />
-              <span className="italic">Contribute</span> to the
+              <span className="italic">Understand</span> the
               <br />
               Mediterranean.
             </h1>
             <p className="mt-8 max-w-md text-lg text-muted-foreground text-pretty leading-relaxed">
               Palomar designs corporate experiences that turn employee engagement into
-              meaningful action — connecting your teams to real research and to the sea.
+              meaningful action — connecting your teams to the territories, communities and
+              cultures of the Mediterranean.
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
               <a
@@ -90,13 +90,13 @@ function HomePage() {
           <div className="relative overflow-hidden bg-secondary order-first lg:order-last min-h-[40vh] lg:min-h-full">
             <img
               src={heroImage}
-              alt="Mediterranean coastline at midday"
+              alt="Mediterranean coastal landscape with hillside village"
               className="absolute inset-0 h-full w-full object-cover"
               width={1080}
               height={1920}
             />
             <div className="absolute bottom-6 right-6 bg-background/80 backdrop-blur-sm rounded-md px-4 py-3 text-[10px] font-mono uppercase tracking-widest text-foreground/70 hidden md:block">
-              Mediterranean Sea · 41.4°N
+              Mediterranean region
             </div>
           </div>
         </div>
@@ -130,14 +130,15 @@ function HomePage() {
               Experiences that <span className="italic">connect</span> people to place.
             </h2>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-lg">
-              We design hands-on programs where your teams explore the Mediterranean,
-              learn from its territories, and contribute to a shared body of knowledge.
+              We design hands-on programs where your teams explore Mediterranean territories
+              and communities, learn from local context, and contribute to a shared body of
+              knowledge.
             </p>
             <ul className="mt-10 space-y-4">
               {[
                 { icon: Compass, label: "Guided exploration" },
                 { icon: GraduationCap, label: "Hands-on learning" },
-                { icon: Users, label: "Team engagement" },
+                { icon: Users, label: "Community encounters" },
                 { icon: Leaf, label: "Real contribution" },
               ].map(({ icon: Icon, label }) => (
                 <li key={label} className="flex items-center gap-4">
@@ -151,12 +152,12 @@ function HomePage() {
           </div>
           <div className="relative aspect-[4/5] rounded-md overflow-hidden">
             <img
-              src={coastImage}
-              alt="Mediterranean coastal rocks meeting clear water"
+              src={observationImage}
+              alt="A field notebook with handwritten observations"
               className="absolute inset-0 h-full w-full object-cover"
               loading="lazy"
-              width={1200}
-              height={900}
+              width={900}
+              height={1200}
             />
           </div>
         </div>
@@ -171,16 +172,16 @@ function HomePage() {
               Curiosity, in the <span className="italic">field</span>.
             </h2>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              People exploring environments. Learning about a territory. Working together
-              on something real, beyond the office walls.
+              People exploring environments and meeting communities. Learning a territory
+              from the inside. Working together on something real, beyond the office walls.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { src: fieldworkImage, title: "Observe", caption: "Hands in the water." },
-              { src: collaborationImage, title: "Collaborate", caption: "Teams, mapping a coast.", offset: true },
-              { src: seagrassImage, title: "Discover", caption: "A meadow of seagrass." },
+              { src: territoryImage, title: "Environment", caption: "A territory, observed." },
+              { src: communityImage, title: "Community", caption: "People, in conversation.", offset: true },
+              { src: observationImage, title: "Knowledge", caption: "Notes that matter." },
             ].map(({ src, title, caption, offset }) => (
               <figure
                 key={title}
@@ -221,9 +222,9 @@ function HomePage() {
           </h2>
           <p className="mt-10 text-lg md:text-xl text-primary-foreground/70 leading-relaxed max-w-2xl mx-auto">
             It is the practice of involving people outside the academic world in real
-            scientific research. Through Palomar, your teams help collect data and
-            observations that feed Mediterranean research institutions — turning a corporate
-            experience into a credible scientific contribution.
+            research. Through Palomar, your teams help gather observations on environments,
+            communities and cultures across the Mediterranean — feeding studies led by
+            universities and research institutions.
           </p>
         </div>
       </section>
@@ -295,7 +296,7 @@ function HomePage() {
               {
                 icon: GraduationCap,
                 title: "Learning",
-                body: "Scientific literacy and a closer relationship with the natural world.",
+                body: "A closer understanding of environments, communities and cultures.",
               },
               {
                 icon: Users,
@@ -317,24 +318,25 @@ function HomePage() {
       <section id="vision" className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={seaImage}
-            alt="A sailing vessel on the deep Mediterranean"
+            src={regionImage}
+            alt="A Mediterranean city seen from above, blending architecture, parks and the sea"
             className="h-full w-full object-cover"
             loading="lazy"
             width={1600}
             height={1000}
           />
-          <div className="absolute inset-0 bg-primary/60" />
+          <div className="absolute inset-0 bg-primary/65" />
         </div>
         <div className="relative py-32 lg:py-48 px-6 lg:px-16 text-primary-foreground">
           <div className="max-w-3xl mx-auto text-center">
             <Eyebrow>Our vision</Eyebrow>
             <h2 className="mt-8 font-display text-4xl md:text-5xl lg:text-6xl italic leading-[1.1]">
-              A Mediterranean of companies, people and researchers — together.
+              A Mediterranean of cities, communities and researchers — working together.
             </h2>
             <p className="mt-10 text-lg text-primary-foreground/80 max-w-xl mx-auto leading-relaxed">
-              We believe the future of this sea will be written by those who choose to
-              understand it. Palomar is the bridge that brings them into the same room.
+              The Mediterranean is more than a sea. It is territories, cultures and people
+              facing shared environmental and social challenges. Palomar is the bridge that
+              brings them — and you — into the same conversation.
             </p>
           </div>
         </div>
