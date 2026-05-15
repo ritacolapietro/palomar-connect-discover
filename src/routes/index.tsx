@@ -61,13 +61,14 @@ function HomePage() {
             <h1 className="mt-6 font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-foreground text-balance">
               Engage your people.
               <br />
-              <span className="italic">Contribute</span> to the
+              <span className="italic">Understand</span> the
               <br />
               Mediterranean.
             </h1>
             <p className="mt-8 max-w-md text-lg text-muted-foreground text-pretty leading-relaxed">
               Palomar designs corporate experiences that turn employee engagement into
-              meaningful action — connecting your teams to real research and to the sea.
+              meaningful action — connecting your teams to the territories, communities and
+              cultures of the Mediterranean.
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
               <a
@@ -89,13 +90,13 @@ function HomePage() {
           <div className="relative overflow-hidden bg-secondary order-first lg:order-last min-h-[40vh] lg:min-h-full">
             <img
               src={heroImage}
-              alt="Mediterranean coastline at midday"
+              alt="Mediterranean coastal landscape with hillside village"
               className="absolute inset-0 h-full w-full object-cover"
               width={1080}
               height={1920}
             />
             <div className="absolute bottom-6 right-6 bg-background/80 backdrop-blur-sm rounded-md px-4 py-3 text-[10px] font-mono uppercase tracking-widest text-foreground/70 hidden md:block">
-              Mediterranean Sea · 41.4°N
+              Mediterranean region
             </div>
           </div>
         </div>
