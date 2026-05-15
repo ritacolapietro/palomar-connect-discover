@@ -130,14 +130,15 @@ function HomePage() {
               Experiences that <span className="italic">connect</span> people to place.
             </h2>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-lg">
-              We design hands-on programs where your teams explore the Mediterranean,
-              learn from its territories, and contribute to a shared body of knowledge.
+              We design hands-on programs where your teams explore Mediterranean territories
+              and communities, learn from local context, and contribute to a shared body of
+              knowledge.
             </p>
             <ul className="mt-10 space-y-4">
               {[
                 { icon: Compass, label: "Guided exploration" },
                 { icon: GraduationCap, label: "Hands-on learning" },
-                { icon: Users, label: "Team engagement" },
+                { icon: Users, label: "Community encounters" },
                 { icon: Leaf, label: "Real contribution" },
               ].map(({ icon: Icon, label }) => (
                 <li key={label} className="flex items-center gap-4">
@@ -151,12 +152,12 @@ function HomePage() {
           </div>
           <div className="relative aspect-[4/5] rounded-md overflow-hidden">
             <img
-              src={coastImage}
-              alt="Mediterranean coastal rocks meeting clear water"
+              src={observationImage}
+              alt="A field notebook with handwritten observations"
               className="absolute inset-0 h-full w-full object-cover"
               loading="lazy"
-              width={1200}
-              height={900}
+              width={900}
+              height={1200}
             />
           </div>
         </div>
