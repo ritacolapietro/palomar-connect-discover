@@ -222,9 +222,9 @@ function HomePage() {
           </h2>
           <p className="mt-10 text-lg md:text-xl text-primary-foreground/70 leading-relaxed max-w-2xl mx-auto">
             It is the practice of involving people outside the academic world in real
-            scientific research. Through Palomar, your teams help collect data and
-            observations that feed Mediterranean research institutions — turning a corporate
-            experience into a credible scientific contribution.
+            research. Through Palomar, your teams help gather observations on environments,
+            communities and cultures across the Mediterranean — feeding studies led by
+            universities and research institutions.
           </p>
         </div>
       </section>
