@@ -8,10 +8,10 @@ export function SiteNav() {
           Palomar
         </Link>
         <div className="hidden md:flex items-center gap-10 text-xs font-medium uppercase tracking-[0.18em] text-foreground/70">
-          <a href="#solution" className="hover:text-foreground transition-colors">Approach</a>
-          <a href="#how" className="hover:text-foreground transition-colors">Method</a>
-          <a href="#value" className="hover:text-foreground transition-colors">For Companies</a>
-          <a href="#vision" className="hover:text-foreground transition-colors">Vision</a>
+          <a href="#companies" className="hover:text-foreground transition-colors">For Companies</a>
+          <a href="#how" className="hover:text-foreground transition-colors">How it Works</a>
+          <a href="#projects" className="hover:text-foreground transition-colors">Projects</a>
+          <a href="#who" className="hover:text-foreground transition-colors">Who We Are</a>
         </div>
         <div className="flex items-center gap-3">
           <span className="hidden sm:flex text-[10px] font-mono uppercase tracking-widest text-foreground/40 gap-2">
