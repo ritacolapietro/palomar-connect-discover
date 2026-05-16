@@ -110,26 +110,7 @@ function HomePage() {
         </div>
       </section>
 
-      {/* 2. CHALLENGE */}
-      <section className="py-24 lg:py-32 px-6 lg:px-16 border-t border-border">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12">
-          <div className="lg:col-span-4">
-            <Eyebrow>The challenge</Eyebrow>
-          </div>
-          <div className="lg:col-span-8">
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.15] text-balance">
-              Engagement and sustainability often live in
-              <span className="italic"> separate rooms</span>.
-            </h2>
-            <p className="mt-8 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-              HR teams look for experiences that bring people together. ESG teams look for
-              tangible, credible impact. Most programs deliver one without the other.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* 3. FOR COMPANIES */}
+      {/* 2. FOR COMPANIES */}
       <section id="companies" className="py-24 lg:py-32 px-6 lg:px-16 bg-secondary">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-12 gap-16 items-start">
