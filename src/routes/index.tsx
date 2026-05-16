@@ -14,7 +14,7 @@ import {
   Building2,
   UtensilsCrossed,
   HeartHandshake,
-  Award,
+  
   Sparkles,
 } from "lucide-react";
 import heroImage from "@/assets/hero-mediterranean.jpg";
@@ -110,26 +110,7 @@ function HomePage() {
         </div>
       </section>
 
-      {/* 2. CHALLENGE */}
-      <section className="py-24 lg:py-32 px-6 lg:px-16 border-t border-border">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12">
-          <div className="lg:col-span-4">
-            <Eyebrow>The challenge</Eyebrow>
-          </div>
-          <div className="lg:col-span-8">
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.15] text-balance">
-              Engagement and sustainability often live in
-              <span className="italic"> separate rooms</span>.
-            </h2>
-            <p className="mt-8 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-              HR teams look for experiences that bring people together. ESG teams look for
-              tangible, credible impact. Most programs deliver one without the other.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* 3. FOR COMPANIES */}
+      {/* 2. FOR COMPANIES */}
       <section id="companies" className="py-24 lg:py-32 px-6 lg:px-16 bg-secondary">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-12 gap-16 items-start">
@@ -267,22 +248,36 @@ function HomePage() {
             ))}
           </div>
 
-          {/* Citizen science summary */}
-          <div className="mt-20 pt-16 border-t border-border grid lg:grid-cols-12 gap-12">
-            <div className="lg:col-span-4">
-              <Eyebrow>The method</Eyebrow>
-              <h3 className="mt-4 font-display text-2xl md:text-3xl leading-tight italic">
-                Citizen science, structured for companies.
-              </h3>
+          {/* Citizen science — dark feature block */}
+          <div className="mt-20 relative overflow-hidden rounded-3xl">
+            <div className="absolute inset-0">
+              <img
+                src={observationImage}
+                alt=""
+                aria-hidden="true"
+                className="h-full w-full object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-primary/85" />
             </div>
-            <div className="lg:col-span-8">
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Citizen science is the practice of involving people outside the academic
-                world in real research. Palomar makes it usable for organisations: guided
-                participation on Mediterranean territories, scientific protocols co-designed
-                with research institutions, and a structured process that turns a field day
-                into validated data and reporting-ready outputs.
-              </p>
+            <div className="relative py-20 lg:py-24 px-8 lg:px-16 text-primary-foreground grid lg:grid-cols-12 gap-12">
+              <div className="lg:col-span-4">
+                <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-accent">
+                  The method
+                </span>
+                <h3 className="mt-4 font-display text-3xl md:text-4xl leading-tight italic">
+                  Citizen science, structured for companies.
+                </h3>
+              </div>
+              <div className="lg:col-span-8 flex items-center">
+                <p className="text-lg md:text-xl text-primary-foreground/85 leading-relaxed">
+                  Citizen science is the practice of involving people outside the academic
+                  world in real research. Palomar makes it usable for organisations: guided
+                  participation on Mediterranean territories, scientific protocols co-designed
+                  with research institutions, and a structured process that turns a field day
+                  into validated data and reporting-ready outputs.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -364,112 +359,117 @@ function HomePage() {
       {/* 6. WHO WE ARE */}
       <section id="who" className="py-24 lg:py-32 px-6 lg:px-16">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-12 gap-12 mb-20">
+          {/* Intro */}
+          <div className="grid lg:grid-cols-12 gap-12 mb-24">
             <div className="lg:col-span-4">
               <Eyebrow>Who we are</Eyebrow>
             </div>
             <div className="lg:col-span-8">
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.15] text-balance">
-                An early-stage initiative connecting companies, research and{" "}
+                An independent initiative connecting companies, research and{" "}
                 <span className="italic">people</span>.
               </h2>
-              <p className="mt-8 text-lg text-muted-foreground leading-relaxed">
-                Palomar designs structured field experiences inspired by citizen science,
-                built around the Mediterranean as a region — its territories, communities and
-                cultures.
+              <p className="mt-8 text-lg text-muted-foreground leading-relaxed max-w-2xl">
+                Palomar was born in Venice, from a conversation around the Mediterranean
+                during the Ocean Literacy World Conference 2024. Today it designs structured
+                field experiences inspired by citizen science, built around the Mediterranean
+                as a region — its territories, communities and cultures.
               </p>
             </div>
           </div>
 
-          {/* Founders */}
-          <div className="grid lg:grid-cols-12 gap-12 mb-20">
+          {/* Timeline */}
+          <div className="grid lg:grid-cols-12 gap-12 mb-24">
             <div className="lg:col-span-4">
-              <Eyebrow>Founders</Eyebrow>
+              <Eyebrow>Our journey</Eyebrow>
               <h3 className="mt-4 font-display text-2xl md:text-3xl leading-tight">
-                Isabella Primicerio & Rita Colapietro
+                Recognitions and <span className="italic">milestones</span>.
               </h3>
             </div>
-            <div className="lg:col-span-8 space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                Isabella and Rita met in Venice during the Ocean Literacy World Conference
-                in 2024, and discovered a shared passion for environmental and social
-                sustainability and for the Mediterranean region.
-              </p>
-              <p>
-                Palomar was born from that conversation: a way to bring companies, people
-                and researchers into the same field — literally and methodologically.
-              </p>
-            </div>
-          </div>
-
-          {/* Programs & recognition */}
-          <div className="grid lg:grid-cols-12 gap-12 mb-20">
-            <div className="lg:col-span-4">
-              <Eyebrow>Programs & recognition</Eyebrow>
-            </div>
-            <div className="lg:col-span-8 space-y-5">
-              {[
-                {
-                  year: "2024",
-                  title: "MITdesignX Venice",
-                  body: "Selected for the program based at Giudecca, Venice.",
-                },
-                {
-                  year: "2024",
-                  title: "Hospitality Prize · SerenDPT",
-                  body: "Winner of the prize by the Venetian incubator supporting young entrepreneurs and innovative ideas in Venice.",
-                },
-                {
-                  year: "2025",
-                  title: "Start Venice Hub — 3rd place",
-                  body: "Program promoted by IUAV University and Regione Veneto.",
-                },
-                {
-                  year: "2025",
-                  title: "BLUNEW · European Interreg",
-                  body: "Currently selected for a European Interreg project.",
-                },
-              ].map(({ year, title, body }) => (
-                <div
-                  key={title}
-                  className="flex gap-6 border-t border-border pt-5"
-                >
-                  <span className="font-mono text-xs text-accent w-16 shrink-0 pt-1">
-                    {year}
-                  </span>
-                  <div className="flex-1">
-                    <div className="flex items-start gap-3">
-                      <Award className="size-4 text-accent mt-1 shrink-0" />
-                      <h4 className="font-display text-lg text-foreground">{title}</h4>
-                    </div>
-                    <p className="mt-2 text-sm text-muted-foreground leading-relaxed pl-7">
+            <div className="lg:col-span-8">
+              <ol className="relative border-l-2 border-border pl-8 space-y-12">
+                {[
+                  {
+                    year: "2024",
+                    title: "MITdesignX Venice",
+                    body: "Selected for the MITdesignX program based at Giudecca, Venice — where Palomar also won the Hospitality Prize awarded by SerenDPT, the Venetian incubator supporting young entrepreneurs and innovative ideas in Venice.",
+                  },
+                  {
+                    year: "2025",
+                    title: "Start Venice Hub — 3rd place",
+                    body: "Recognised in the program promoted by IUAV University and Regione Veneto.",
+                  },
+                  {
+                    year: "2025",
+                    title: "BLUNEW · European Interreg",
+                    body: "Currently selected for a European Interreg project on the blue economy.",
+                  },
+                ].map(({ year, title, body }) => (
+                  <li key={title} className="relative">
+                    <span
+                      aria-hidden="true"
+                      className="absolute -left-[2.6rem] top-1.5 size-4 rounded-full bg-accent border-4 border-background"
+                    />
+                    <span className="font-mono text-[11px] uppercase tracking-[0.22em] text-accent">
+                      {year}
+                    </span>
+                    <h4 className="mt-2 font-display text-xl md:text-2xl text-foreground leading-snug">
+                      {title}
+                    </h4>
+                    <p className="mt-3 text-base text-muted-foreground leading-relaxed max-w-xl">
                       {body}
                     </p>
-                  </div>
-                </div>
-              ))}
+                  </li>
+                ))}
+              </ol>
             </div>
           </div>
 
           {/* Advisor */}
-          <div className="grid lg:grid-cols-12 gap-12 mb-20">
+          <div className="grid lg:grid-cols-12 gap-12 mb-24">
             <div className="lg:col-span-4">
               <Eyebrow>Advisor</Eyebrow>
+              <h3 className="mt-4 font-display text-2xl md:text-3xl leading-tight">
+                A scientific compass.
+              </h3>
             </div>
             <div className="lg:col-span-8">
-              <div className="bg-secondary rounded-2xl p-7 border border-border">
-                <h4 className="font-display text-xl text-foreground">Ana</h4>
-                <p className="mt-1 text-xs font-mono uppercase tracking-widest text-accent">
+              <div className="bg-secondary rounded-2xl p-8 border border-border">
+                <h4 className="font-display text-2xl text-foreground">Ana</h4>
+                <p className="mt-2 text-xs font-mono uppercase tracking-widest text-accent">
                   Advisor · Ocean Literacy & Blue Careers
                 </p>
-                <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
+                <p className="mt-5 text-base text-muted-foreground leading-relaxed">
                   Specialist in ocean literacy and blue-economy careers.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Vision (moved inside Who We Are) */}
+          {/* Open to dialogue — moved ABOVE vision */}
+          <div className="mb-16 flex flex-col md:flex-row md:items-center md:justify-between gap-6 border-y border-border py-10">
+            <div className="max-w-xl">
+              <Eyebrow>Open to dialogue</Eyebrow>
+              <h4 className="mt-4 font-display text-2xl md:text-3xl text-foreground leading-tight">
+                Always looking for <span className="italic">conversation</span> and advisory.
+              </h4>
+              <p className="mt-3 text-muted-foreground leading-relaxed">
+                These themes live on exchange. We're always open to dialogue with researchers,
+                practitioners and organisations who want to share perspectives on the
+                Mediterranean.
+              </p>
+            </div>
+            <a
+              href="#contact"
+              className="group inline-flex items-center gap-2 px-7 py-3.5 border border-border text-foreground text-sm font-medium rounded-full hover:bg-secondary transition-colors shrink-0"
+            >
+              <Users className="size-4 text-accent" />
+              Get in touch
+              <ArrowRight className="size-4 group-hover:translate-x-0.5 transition-transform" />
+            </a>
+          </div>
+
+          {/* Vision (dark block — closes the section) */}
           <div className="relative overflow-hidden rounded-3xl">
             <div className="absolute inset-0">
               <img
@@ -496,26 +496,6 @@ function HomePage() {
                 </p>
               </div>
             </div>
-          </div>
-
-          {/* CTA */}
-          <div className="mt-16 flex flex-col md:flex-row md:items-center md:justify-between gap-6 border-t border-border pt-12">
-            <div className="max-w-xl">
-              <h4 className="font-display text-2xl md:text-3xl text-foreground leading-tight">
-                We're expanding the scientific board.
-              </h4>
-              <p className="mt-3 text-muted-foreground leading-relaxed">
-                If you'd like to contribute, get in touch.
-              </p>
-            </div>
-            <a
-              href="#contact"
-              className="group inline-flex items-center gap-2 px-7 py-3.5 border border-border text-foreground text-sm font-medium rounded-full hover:bg-secondary transition-colors shrink-0"
-            >
-              <Users className="size-4 text-accent" />
-              Join the board
-              <ArrowRight className="size-4 group-hover:translate-x-0.5 transition-transform" />
-            </a>
           </div>
         </div>
       </section>
