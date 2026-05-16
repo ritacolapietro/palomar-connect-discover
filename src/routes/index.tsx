@@ -14,7 +14,7 @@ import {
   Building2,
   UtensilsCrossed,
   HeartHandshake,
-  Award,
+  
   Sparkles,
 } from "lucide-react";
 import heroImage from "@/assets/hero-mediterranean.jpg";
