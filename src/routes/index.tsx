@@ -1,13 +1,21 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
   ArrowRight,
-  Compass,
   Microscope,
   Users,
   LineChart,
-  Leaf,
   GraduationCap,
   Heart,
+  ClipboardList,
+  Compass,
+  ShieldCheck,
+  FileBarChart,
+  Leaf,
+  Building2,
+  UtensilsCrossed,
+  HeartHandshake,
+  Award,
+  Sparkles,
 } from "lucide-react";
 import heroImage from "@/assets/hero-mediterranean.jpg";
 import communityImage from "@/assets/experience-community.jpg";
@@ -79,7 +87,7 @@ function HomePage() {
                 <ArrowRight className="size-4 group-hover:translate-x-0.5 transition-transform" />
               </a>
               <a
-                href="#solution"
+                href="#how"
                 className="inline-flex items-center px-7 py-3.5 border border-border text-foreground text-sm font-medium rounded-full hover:bg-secondary transition-colors"
               >
                 Learn more
@@ -102,7 +110,7 @@ function HomePage() {
         </div>
       </section>
 
-      {/* 2. VALUE — the corporate challenge */}
+      {/* 2. CHALLENGE */}
       <section className="py-24 lg:py-32 px-6 lg:px-16 border-t border-border">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4">
@@ -121,229 +129,399 @@ function HomePage() {
         </div>
       </section>
 
-      {/* 3. SOLUTION — what Palomar does (no "citizen science" yet) */}
-      <section id="solution" className="py-24 lg:py-32 px-6 lg:px-16 bg-secondary">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <Eyebrow>What we do</Eyebrow>
-            <h2 className="mt-6 font-display text-3xl md:text-4xl lg:text-5xl leading-tight">
-              Experiences that <span className="italic">connect</span> people to place.
-            </h2>
-            <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-lg">
-              We design hands-on programs where your teams explore Mediterranean territories
-              and communities, learn from local context, and contribute to a shared body of
-              knowledge.
-            </p>
-            <ul className="mt-10 space-y-4">
-              {[
-                { icon: Compass, label: "Guided exploration" },
-                { icon: GraduationCap, label: "Hands-on learning" },
-                { icon: Users, label: "Community encounters" },
-                { icon: Leaf, label: "Real contribution" },
-              ].map(({ icon: Icon, label }) => (
-                <li key={label} className="flex items-center gap-4">
-                  <span className="flex size-10 items-center justify-center rounded-full bg-background border border-border">
-                    <Icon className="size-4 text-accent" />
-                  </span>
-                  <span className="text-foreground font-medium">{label}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="relative aspect-[4/5] rounded-md overflow-hidden">
-            <img
-              src={observationImage}
-              alt="A field notebook with handwritten observations"
-              className="absolute inset-0 h-full w-full object-cover"
-              loading="lazy"
-              width={900}
-              height={1200}
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* 4. EXPERIENCE — curiosity & discovery */}
-      <section className="py-24 lg:py-32 px-6 lg:px-16">
+      {/* 3. FOR COMPANIES */}
+      <section id="companies" className="py-24 lg:py-32 px-6 lg:px-16 bg-secondary">
         <div className="max-w-6xl mx-auto">
-          <div className="max-w-2xl mb-16">
-            <Eyebrow>The experience</Eyebrow>
-            <h2 className="mt-6 font-display text-3xl md:text-4xl lg:text-5xl leading-tight">
-              Curiosity, in the <span className="italic">field</span>.
-            </h2>
-            <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              People exploring environments and meeting communities. Learning a territory
-              from the inside. Working together on something real, beyond the office walls.
-            </p>
-          </div>
+          <div className="grid lg:grid-cols-12 gap-16 items-start">
+            <div className="lg:col-span-5">
+              <Eyebrow>For companies</Eyebrow>
+              <h2 className="mt-6 font-display text-3xl md:text-4xl lg:text-5xl leading-tight">
+                A program that <span className="italic">earns its place</span> in HR and ESG.
+              </h2>
+              <p className="mt-6 text-base text-muted-foreground leading-relaxed">
+                We co-design a field experience with our scientific partners, run it with
+                your team on a real Mediterranean site, validate the data with researchers,
+                and deliver reporting your sustainability team can actually use.
+              </p>
+            </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { src: territoryImage, title: "Environment", caption: "A territory, observed." },
-              { src: communityImage, title: "Community", caption: "People, in conversation.", offset: true },
-              { src: observationImage, title: "Knowledge", caption: "Notes that matter." },
-            ].map(({ src, title, caption, offset }) => (
-              <figure
-                key={title}
-                className={`space-y-4 ${offset ? "md:mt-12" : ""}`}
-              >
-                <div className="aspect-[3/4] overflow-hidden rounded-md bg-secondary">
-                  <img
-                    src={src}
-                    alt={caption}
-                    className="h-full w-full object-cover"
-                    loading="lazy"
-                    width={900}
-                    height={1200}
-                  />
+            <div className="lg:col-span-7 grid sm:grid-cols-2 gap-6">
+              {[
+                {
+                  icon: Heart,
+                  title: "Meaningful engagement",
+                  body: "Field experiences your people remember and talk about long after they end.",
+                },
+                {
+                  icon: Microscope,
+                  title: "Science-based credibility",
+                  body: "Protocols co-designed with researchers, validated by scientific partners.",
+                },
+                {
+                  icon: LineChart,
+                  title: "ESG alignment",
+                  body: "Primary data and KPIs mapped to ESRS, CSRD and GRI frameworks.",
+                },
+                {
+                  icon: GraduationCap,
+                  title: "Learning & skills",
+                  body: "A closer understanding of environments, communities and cultures.",
+                },
+              ].map(({ icon: Icon, title, body }) => (
+                <div key={title} className="bg-background rounded-2xl p-7 border border-border">
+                  <Icon className="size-5 text-accent" />
+                  <h3 className="mt-5 font-display text-xl text-foreground">{title}</h3>
+                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{body}</p>
                 </div>
-                <figcaption>
-                  <span className="font-mono text-[10px] uppercase tracking-widest text-accent">
-                    {title}
-                  </span>
-                  <p className="mt-2 font-display italic text-xl text-foreground">{caption}</p>
-                </figcaption>
-              </figure>
-            ))}
+              ))}
+            </div>
+          </div>
+
+          {/* Reporting outputs */}
+          <div className="mt-20 pt-16 border-t border-border">
+            <div className="max-w-2xl mb-12">
+              <Eyebrow>What you receive</Eyebrow>
+              <h3 className="mt-4 font-display text-2xl md:text-3xl lg:text-4xl leading-tight">
+                Reporting outputs, ready to use.
+              </h3>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                {
+                  title: "Executive summary",
+                  body: "What was measured, where, by whom and with which methodology — in plain language.",
+                },
+                {
+                  title: "KPI mapping",
+                  body: "Cross-walk to ESRS, CSRD and GRI, with methodological references attached.",
+                },
+                {
+                  title: "Scientific validation",
+                  body: "Protocols and datasets reviewed and validated by our research partners.",
+                },
+                {
+                  title: "Stakeholder materials",
+                  body: "Extracts ready for sustainability reports, internal comms and social channels.",
+                },
+              ].map(({ title, body }) => (
+                <div key={title} className="bg-background rounded-2xl p-6 border border-border">
+                  <h4 className="font-display text-lg text-foreground">{title}</h4>
+                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{body}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* 5. CONCEPT — citizen science reveal */}
-      <section className="py-32 lg:py-40 px-6 lg:px-16 bg-primary text-primary-foreground">
-        <div className="max-w-3xl mx-auto text-center">
-          <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-accent">
-            The method
-          </span>
-          <h2 className="mt-8 font-display text-4xl md:text-5xl lg:text-6xl italic leading-[1.05]">
-            This approach is called
-            <br />
-            citizen science.
-          </h2>
-          <p className="mt-10 text-lg md:text-xl text-primary-foreground/70 leading-relaxed max-w-2xl mx-auto">
-            It is the practice of involving people outside the academic world in real
-            research. Through Palomar, your teams help gather observations on environments,
-            communities and cultures across the Mediterranean — feeding studies led by
-            universities and research institutions.
-          </p>
-        </div>
-      </section>
-
-      {/* 6. HOW IT WORKS */}
+      {/* 4. HOW IT WORKS */}
       <section id="how" className="py-24 lg:py-32 px-6 lg:px-16">
         <div className="max-w-6xl mx-auto">
           <div className="mb-16 max-w-2xl">
             <Eyebrow>How it works</Eyebrow>
             <h2 className="mt-6 font-display text-3xl md:text-4xl lg:text-5xl leading-tight">
-              A simple, <span className="italic">guided</span> process.
+              Four steps, from research <span className="italic">to reporting</span>.
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
               {
                 n: "01",
-                title: "Alignment",
-                body: "We map your engagement and ESG goals to active research projects.",
+                icon: ClipboardList,
+                title: "Scientific Co-design",
+                body: "We start from our scientific partners' research priorities and translate them into simple, structured protocols that non-experts can perform correctly. Participants receive a preliminary briefing or training session led by researchers to understand context, objectives and methods.",
               },
               {
                 n: "02",
-                title: "Experience",
-                body: "Your teams join guided field experiences with researchers and local partners.",
+                icon: Compass,
+                title: "Field Experience",
+                body: "Your team spends half a day or more on a real site together with a researcher. The experience follows the rhythm of a workshop and the rigour of a scientific mission: briefing, data collection, debriefing and a guided moment of reflection on the researched themes.",
               },
               {
                 n: "03",
-                title: "Contribution",
-                body: "Observations are validated and integrated into ongoing scientific studies.",
+                icon: ShieldCheck,
+                title: "Scientific Validation",
+                body: "Our research partners review all collected data, verify data points, discard outliers and ensure methodological consistency. Scientific responsibility and validation remain fully with the researchers.",
               },
               {
                 n: "04",
-                title: "Reporting",
-                body: "You receive impact metrics ready for ESG reports and internal communication.",
+                icon: FileBarChart,
+                title: "Strategic Reporting",
+                body: "We translate validated findings and participation metrics into primary-data KPIs relevant for companies. Outputs are mapped to ESRS, CSRD and sustainability reporting needs.",
               },
-            ].map(({ n, title, body }) => (
-              <div key={n} className="border-t border-border pt-6">
-                <span className="font-mono text-xs text-accent">{n}</span>
-                <h3 className="mt-3 font-display text-2xl text-foreground">{title}</h3>
+            ].map(({ n, icon: Icon, title, body }) => (
+              <div
+                key={n}
+                className="bg-secondary rounded-2xl p-7 border border-border flex flex-col"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="font-mono text-xs text-accent">{n}</span>
+                  <Icon className="size-5 text-accent" />
+                </div>
+                <h3 className="mt-6 font-display text-xl text-foreground leading-snug">
+                  {title}
+                </h3>
                 <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{body}</p>
               </div>
             ))}
           </div>
+
+          {/* Citizen science summary */}
+          <div className="mt-20 pt-16 border-t border-border grid lg:grid-cols-12 gap-12">
+            <div className="lg:col-span-4">
+              <Eyebrow>The method</Eyebrow>
+              <h3 className="mt-4 font-display text-2xl md:text-3xl leading-tight italic">
+                Citizen science, structured for companies.
+              </h3>
+            </div>
+            <div className="lg:col-span-8">
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Citizen science is the practice of involving people outside the academic
+                world in real research. Palomar makes it usable for organisations: guided
+                participation on Mediterranean territories, scientific protocols co-designed
+                with research institutions, and a structured process that turns a field day
+                into validated data and reporting-ready outputs.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* 7. BUSINESS VALUE */}
-      <section id="value" className="py-24 lg:py-32 px-6 lg:px-16 bg-secondary">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-16 items-start">
-          <div className="lg:col-span-5">
-            <Eyebrow>For companies</Eyebrow>
-            <h2 className="mt-6 font-display text-3xl md:text-4xl lg:text-5xl leading-tight">
-              A program that <span className="italic">earns its place</span> in HR and ESG.
-            </h2>
-          </div>
-          <div className="lg:col-span-7 grid sm:grid-cols-2 gap-6">
-            {[
-              {
-                icon: Heart,
-                title: "Engagement",
-                body: "Experiences people remember and talk about long after they end.",
-              },
-              {
-                icon: LineChart,
-                title: "ESG impact",
-                body: "Verified contributions to research, ready to report.",
-              },
-              {
-                icon: GraduationCap,
-                title: "Learning",
-                body: "A closer understanding of environments, communities and cultures.",
-              },
-              {
-                icon: Users,
-                title: "Culture",
-                body: "Shared purpose across teams, locations and roles.",
-              },
-            ].map(({ icon: Icon, title, body }) => (
-              <div key={title} className="bg-background rounded-md p-7 border border-border">
-                <Icon className="size-5 text-accent" />
-                <h3 className="mt-5 font-display text-xl text-foreground">{title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{body}</p>
+      {/* 5. PROJECTS */}
+      <section id="projects" className="py-24 lg:py-32 px-6 lg:px-16 bg-secondary">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-12 gap-12 items-end mb-16">
+            <div className="lg:col-span-7">
+              <Eyebrow>Projects</Eyebrow>
+              <h2 className="mt-6 font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05]">
+                The field is your <span className="italic">workshop</span>.
+              </h2>
+              <p className="mt-8 text-lg text-muted-foreground leading-relaxed max-w-xl">
+                Exploration, learning, collaboration and contribution — every project is a
+                guided field activity that brings your team into direct contact with a real
+                Mediterranean site and a real research question.
+              </p>
+            </div>
+            <div className="lg:col-span-5">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                <img
+                  src={territoryImage}
+                  alt="A Mediterranean territory observed during fieldwork"
+                  className="absolute inset-0 h-full w-full object-cover"
+                  loading="lazy"
+                  width={900}
+                  height={675}
+                />
+                <div className="absolute inset-0 bg-gradient-to-tr from-primary/40 via-transparent to-transparent" />
               </div>
+            </div>
+          </div>
+
+          {/* Filters */}
+          <div className="flex flex-wrap gap-2 mb-10">
+            {[
+              { icon: Leaf, label: "Environment (land & sea)" },
+              { icon: HeartHandshake, label: "Social" },
+              { icon: UtensilsCrossed, label: "Culture & food" },
+              { icon: Building2, label: "Urban systems" },
+            ].map(({ icon: Icon, label }) => (
+              <button
+                key={label}
+                type="button"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-background text-xs font-medium text-foreground/80 hover:bg-secondary transition-colors"
+              >
+                <Icon className="size-3.5 text-accent" />
+                {label}
+              </button>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* 8. VISION */}
-      <section id="vision" className="relative overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src={regionImage}
-            alt="A Mediterranean city seen from above, blending architecture, parks and the sea"
-            className="h-full w-full object-cover"
-            loading="lazy"
-            width={1600}
-            height={1000}
-          />
-          <div className="absolute inset-0 bg-primary/65" />
-        </div>
-        <div className="relative py-32 lg:py-48 px-6 lg:px-16 text-primary-foreground">
-          <div className="max-w-3xl mx-auto text-center">
-            <Eyebrow>Our vision</Eyebrow>
-            <h2 className="mt-8 font-display text-4xl md:text-5xl lg:text-6xl italic leading-[1.1]">
-              A Mediterranean of cities, communities and researchers — working together.
-            </h2>
-            <p className="mt-10 text-lg text-primary-foreground/80 max-w-xl mx-auto leading-relaxed">
-              The Mediterranean is more than a sea. It is territories, cultures and people
-              facing shared environmental and social challenges. Palomar is the bridge that
-              brings them — and you — into the same conversation.
+          {/* Stay tuned placeholder */}
+          <div className="rounded-2xl border border-dashed border-border bg-background p-12 text-center">
+            <Sparkles className="size-6 text-accent mx-auto" />
+            <h3 className="mt-4 font-display text-2xl md:text-3xl text-foreground">
+              Stay tuned.
+            </h3>
+            <p className="mt-3 text-muted-foreground max-w-md mx-auto leading-relaxed">
+              The first pilots are currently being designed with our scientific partners.
+              Project listings will appear here as they go live.
             </p>
+          </div>
+
+          <div className="mt-12 text-center">
+            <a
+              href="#contact"
+              className="group inline-flex items-center gap-2 text-base font-medium text-foreground hover:text-accent transition-colors"
+            >
+              Looking for something specific for your team? Let's design it together
+              <ArrowRight className="size-4 group-hover:translate-x-0.5 transition-transform" />
+            </a>
           </div>
         </div>
       </section>
 
-      {/* 9. CTA */}
-      <section id="contact" className="py-24 lg:py-32 px-6 lg:px-16">
+      {/* 6. WHO WE ARE */}
+      <section id="who" className="py-24 lg:py-32 px-6 lg:px-16">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-12 gap-12 mb-20">
+            <div className="lg:col-span-4">
+              <Eyebrow>Who we are</Eyebrow>
+            </div>
+            <div className="lg:col-span-8">
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.15] text-balance">
+                An early-stage initiative connecting companies, research and{" "}
+                <span className="italic">people</span>.
+              </h2>
+              <p className="mt-8 text-lg text-muted-foreground leading-relaxed">
+                Palomar designs structured field experiences inspired by citizen science,
+                built around the Mediterranean as a region — its territories, communities and
+                cultures.
+              </p>
+            </div>
+          </div>
+
+          {/* Founders */}
+          <div className="grid lg:grid-cols-12 gap-12 mb-20">
+            <div className="lg:col-span-4">
+              <Eyebrow>Founders</Eyebrow>
+              <h3 className="mt-4 font-display text-2xl md:text-3xl leading-tight">
+                Isabella Primicerio & Rita Colapietro
+              </h3>
+            </div>
+            <div className="lg:col-span-8 space-y-4 text-muted-foreground leading-relaxed">
+              <p>
+                Isabella and Rita met in Venice during the Ocean Literacy World Conference
+                in 2024, and discovered a shared passion for environmental and social
+                sustainability and for the Mediterranean region.
+              </p>
+              <p>
+                Palomar was born from that conversation: a way to bring companies, people
+                and researchers into the same field — literally and methodologically.
+              </p>
+            </div>
+          </div>
+
+          {/* Programs & recognition */}
+          <div className="grid lg:grid-cols-12 gap-12 mb-20">
+            <div className="lg:col-span-4">
+              <Eyebrow>Programs & recognition</Eyebrow>
+            </div>
+            <div className="lg:col-span-8 space-y-5">
+              {[
+                {
+                  year: "2024",
+                  title: "MITdesignX Venice",
+                  body: "Selected for the program based at Giudecca, Venice.",
+                },
+                {
+                  year: "2024",
+                  title: "Hospitality Prize · SerenDPT",
+                  body: "Winner of the prize by the Venetian incubator supporting young entrepreneurs and innovative ideas in Venice.",
+                },
+                {
+                  year: "2025",
+                  title: "Start Venice Hub — 3rd place",
+                  body: "Program promoted by IUAV University and Regione Veneto.",
+                },
+                {
+                  year: "2025",
+                  title: "BLUNEW · European Interreg",
+                  body: "Currently selected for a European Interreg project.",
+                },
+              ].map(({ year, title, body }) => (
+                <div
+                  key={title}
+                  className="flex gap-6 border-t border-border pt-5"
+                >
+                  <span className="font-mono text-xs text-accent w-16 shrink-0 pt-1">
+                    {year}
+                  </span>
+                  <div className="flex-1">
+                    <div className="flex items-start gap-3">
+                      <Award className="size-4 text-accent mt-1 shrink-0" />
+                      <h4 className="font-display text-lg text-foreground">{title}</h4>
+                    </div>
+                    <p className="mt-2 text-sm text-muted-foreground leading-relaxed pl-7">
+                      {body}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Advisor */}
+          <div className="grid lg:grid-cols-12 gap-12 mb-20">
+            <div className="lg:col-span-4">
+              <Eyebrow>Advisor</Eyebrow>
+            </div>
+            <div className="lg:col-span-8">
+              <div className="bg-secondary rounded-2xl p-7 border border-border">
+                <h4 className="font-display text-xl text-foreground">Ana</h4>
+                <p className="mt-1 text-xs font-mono uppercase tracking-widest text-accent">
+                  Advisor · Ocean Literacy & Blue Careers
+                </p>
+                <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
+                  Specialist in ocean literacy and blue-economy careers.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Vision (moved inside Who We Are) */}
+          <div className="relative overflow-hidden rounded-3xl">
+            <div className="absolute inset-0">
+              <img
+                src={regionImage}
+                alt="A Mediterranean city seen from above, blending architecture, parks and the sea"
+                className="h-full w-full object-cover"
+                loading="lazy"
+                width={1600}
+                height={1000}
+              />
+              <div className="absolute inset-0 bg-primary/70" />
+            </div>
+            <div className="relative py-20 lg:py-28 px-8 lg:px-16 text-primary-foreground">
+              <div className="max-w-3xl">
+                <Eyebrow>Our vision</Eyebrow>
+                <h3 className="mt-6 font-display text-3xl md:text-4xl lg:text-5xl italic leading-[1.1]">
+                  A Mediterranean of cities, communities and researchers — working together.
+                </h3>
+                <p className="mt-8 text-lg text-primary-foreground/80 max-w-xl leading-relaxed">
+                  The Mediterranean is more than a sea. It is territories, cultures and
+                  people facing shared environmental and social challenges. Palomar is the
+                  bridge that brings them — and the companies who care — into the same
+                  conversation, working toward system-level change.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="mt-16 flex flex-col md:flex-row md:items-center md:justify-between gap-6 border-t border-border pt-12">
+            <div className="max-w-xl">
+              <h4 className="font-display text-2xl md:text-3xl text-foreground leading-tight">
+                We're expanding the scientific board.
+              </h4>
+              <p className="mt-3 text-muted-foreground leading-relaxed">
+                If you'd like to contribute, get in touch.
+              </p>
+            </div>
+            <a
+              href="#contact"
+              className="group inline-flex items-center gap-2 px-7 py-3.5 border border-border text-foreground text-sm font-medium rounded-full hover:bg-secondary transition-colors shrink-0"
+            >
+              <Users className="size-4 text-accent" />
+              Join the board
+              <ArrowRight className="size-4 group-hover:translate-x-0.5 transition-transform" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* 7. FINAL CTA */}
+      <section id="contact" className="py-24 lg:py-32 px-6 lg:px-16 border-t border-border">
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-12 gap-10 items-end">
             <div className="md:col-span-8">
@@ -369,6 +547,12 @@ function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Hidden image preloads to keep imports active for visual continuity */}
+      <div className="hidden">
+        <img src={communityImage} alt="" />
+        <img src={observationImage} alt="" />
+      </div>
     </main>
   );
 }
