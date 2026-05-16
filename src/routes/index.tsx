@@ -248,22 +248,36 @@ function HomePage() {
             ))}
           </div>
 
-          {/* Citizen science summary */}
-          <div className="mt-20 pt-16 border-t border-border grid lg:grid-cols-12 gap-12">
-            <div className="lg:col-span-4">
-              <Eyebrow>The method</Eyebrow>
-              <h3 className="mt-4 font-display text-2xl md:text-3xl leading-tight italic">
-                Citizen science, structured for companies.
-              </h3>
+          {/* Citizen science — dark feature block */}
+          <div className="mt-20 relative overflow-hidden rounded-3xl">
+            <div className="absolute inset-0">
+              <img
+                src={observationImage}
+                alt=""
+                aria-hidden="true"
+                className="h-full w-full object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-primary/85" />
             </div>
-            <div className="lg:col-span-8">
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Citizen science is the practice of involving people outside the academic
-                world in real research. Palomar makes it usable for organisations: guided
-                participation on Mediterranean territories, scientific protocols co-designed
-                with research institutions, and a structured process that turns a field day
-                into validated data and reporting-ready outputs.
-              </p>
+            <div className="relative py-20 lg:py-24 px-8 lg:px-16 text-primary-foreground grid lg:grid-cols-12 gap-12">
+              <div className="lg:col-span-4">
+                <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-accent">
+                  The method
+                </span>
+                <h3 className="mt-4 font-display text-3xl md:text-4xl leading-tight italic">
+                  Citizen science, structured for companies.
+                </h3>
+              </div>
+              <div className="lg:col-span-8 flex items-center">
+                <p className="text-lg md:text-xl text-primary-foreground/85 leading-relaxed">
+                  Citizen science is the practice of involving people outside the academic
+                  world in real research. Palomar makes it usable for organisations: guided
+                  participation on Mediterranean territories, scientific protocols co-designed
+                  with research institutions, and a structured process that turns a field day
+                  into validated data and reporting-ready outputs.
+                </p>
+              </div>
             </div>
           </div>
         </div>
