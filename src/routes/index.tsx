@@ -197,8 +197,8 @@ function HomePage() {
             </div>
           </div>
         </div>
-      </section>
 
+        <div className="max-w-7xl mx-auto">
           {/* Reporting outputs */}
           <div className="mt-20 pt-16 border-t border-border">
             <div className="max-w-2xl mb-12">
