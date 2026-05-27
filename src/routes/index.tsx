@@ -17,7 +17,7 @@ import {
   
   Sparkles,
 } from "lucide-react";
-import heroImage from "@/assets/hero-mediterranean.jpg";
+import heroImage from "@/assets/hero-underwater.png";
 import communityImage from "@/assets/experience-community.jpg";
 import territoryImage from "@/assets/experience-territory.jpg";
 import observationImage from "@/assets/experience-observation.jpg";
@@ -65,18 +65,14 @@ function HomePage() {
       <section className="relative">
         <div className="grid lg:grid-cols-2 min-h-[88vh]">
           <div className="flex flex-col justify-center px-6 lg:px-16 py-20 lg:py-0 animate-fade-up">
-            <Eyebrow>For HR · ESG · Culture leaders</Eyebrow>
+            <Eyebrow>​</Eyebrow>
             <h1 className="mt-6 font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-foreground text-balance font-sans">
-              Engage your people.
+              Inspire your people
               <br />
-              <span className="italic">Understand</span> the
-              <br />
-              Mediterranean.
+              Protect the Mediterranean
             </h1>
             <p className="mt-8 max-w-md text-muted-foreground text-pretty leading-relaxed font-serif text-xl">
-              Palomar designs corporate experiences that turn employee engagement into
-              meaningful action — connecting your teams to the territories, communities and
-              cultures of the Mediterranean. cwdfw
+              We bridge corporate engagement and active research, turning employee engagement into a human-powered catalyst for environmental and cultural preservation. 
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
               <a
@@ -99,12 +95,12 @@ function HomePage() {
             <img
               src={heroImage}
               alt="Mediterranean coastal landscape with hillside village"
-              className="absolute inset-0 h-full w-full object-cover"
+              className="absolute inset-0 h-full w-full object-fill"
               width={1080}
               height={1920}
             />
-            <div className="absolute bottom-6 right-6 bg-background/80 backdrop-blur-sm rounded-md px-4 py-3 text-[10px] font-mono uppercase tracking-widest text-foreground/70 hidden md:block">
-              Mediterranean region
+            <div className="absolute bottom-6 right-6 bg-background/80 backdrop-blur-sm rounded-md text-[10px] font-mono uppercase tracking-widest text-foreground/70 hidden md:block px-0 py-0 text-transparent bg-transparent">
+              ​
             </div>
           </div>
         </div>
@@ -131,7 +127,7 @@ function HomePage() {
                 {
                   icon: Heart,
                   title: "Meaningful engagement",
-                  body: "Field experiences your people remember and talk about long after they end.",
+                  body: "Field experiences your  people will remember",
                 },
                 {
                   icon: Microscope,
@@ -141,7 +137,7 @@ function HomePage() {
                 {
                   icon: LineChart,
                   title: "ESG alignment",
-                  body: "Primary data and KPIs mapped to ESRS, CSRD and GRI frameworks.",
+                  body: "Primary data and KPIs mapped to ESRS and CSRD frameworks.",
                 },
                 {
                   icon: GraduationCap,
@@ -428,19 +424,20 @@ function HomePage() {
           {/* Advisor */}
           <div className="grid lg:grid-cols-12 gap-12 mb-24">
             <div className="lg:col-span-4">
-              <Eyebrow>Advisor</Eyebrow>
+              <Eyebrow></Eyebrow>
               <h3 className="mt-4 font-display text-2xl md:text-3xl leading-tight">
-                A scientific compass.
+                ​
               </h3>
             </div>
             <div className="lg:col-span-8">
               <div className="bg-secondary rounded-2xl p-8 border border-border">
-                <h4 className="font-display text-2xl text-foreground">Ana</h4>
+                <h4 className="font-display text-2xl text-foreground">
+</h4>
                 <p className="mt-2 text-xs font-mono uppercase tracking-widest text-accent">
-                  Advisor · Ocean Literacy & Blue Careers
+                  
                 </p>
                 <p className="mt-5 text-base text-muted-foreground leading-relaxed">
-                  Specialist in ocean literacy and blue-economy careers.
+                  
                 </p>
               </div>
             </div>
