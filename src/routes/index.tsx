@@ -95,7 +95,7 @@ function HomePage() {
             <img
               src={heroImage}
               alt="Mediterranean coastal landscape with hillside village"
-              className="absolute inset-0 h-full w-full object-fill"
+              className="absolute inset-0 h-full w-full object-cover"
               width={1080}
               height={1920}
             />
@@ -113,13 +113,25 @@ function HomePage() {
             <div className="lg:col-span-5">
               <Eyebrow>For companies</Eyebrow>
               <h2 className="mt-6 font-display text-3xl md:text-4xl lg:text-5xl leading-tight">
-                A program that <span className="italic">earns its place</span> in HR and ESG.
+                Empower your people&nbsp;<br />
+                Validate your impact&nbsp;
               </h2>
-              <p className="mt-6 text-base text-muted-foreground leading-relaxed">
-                We co-design a field experience with our scientific partners, run it with
-                your team on a real Mediterranean site, validate the data with researchers,
-                and deliver reporting your sustainability team can actually use.
-              </p>
+              <div className="mt-6 space-y-6 text-base text-muted-foreground leading-relaxed">
+                <p>
+                  We co-design a field experience with our scientific partners, run it with
+                  your team on a real Mediterranean site, validate the data with researchers,
+                  and deliver reporting your sustainability team can actually use.
+                </p>
+                <p>
+                  Our program combines professional development with real-world environmental action. Your team collects data on-site, while your organization gain&nbsp; verified data required by ESG standards.&nbsp;
+                </p>
+                <p>
+                  We bridge the gap between HR development and ESG strategy. By co-designing immersive Mediterranean field experiences, we help your team gain hands-on expertise while delivering the verified, audit-ready data your sustainability team needs.
+                </p>
+                <p>
+                  We bridge HR and ESG through science-backed field experiences. We co-design the research, run the onsite program, and deliver data your sustainability team can rely on.
+                </p>
+              </div>
             </div>
 
             <div className="lg:col-span-7 grid sm:grid-cols-2 gap-6">
