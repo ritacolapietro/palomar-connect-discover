@@ -424,7 +424,7 @@ function HomePage() {
           {/* Advisor */}
           <div className="grid lg:grid-cols-12 gap-12 mb-24">
             <div className="lg:col-span-4">
-              <Eyebrow></Eyebrow>
+              <Eyebrow>​</Eyebrow>
               <h3 className="mt-4 font-display text-2xl md:text-3xl leading-tight">
                 ​
               </h3>
