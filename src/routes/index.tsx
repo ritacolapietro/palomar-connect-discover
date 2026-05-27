@@ -14,9 +14,12 @@ import {
   Building2,
   UtensilsCrossed,
   HeartHandshake,
-  
+  Database,
+  BookOpen,
+  ClipboardCheck,
   Sparkles,
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-underwater.png";
 import communityImage from "@/assets/experience-community.jpg";
 import territoryImage from "@/assets/experience-territory.jpg";
@@ -107,65 +110,98 @@ function HomePage() {
       </section>
 
       {/* 2. FOR COMPANIES */}
-      <section id="companies" className="py-24 lg:py-32 px-6 lg:px-16 bg-secondary">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-12 gap-16 items-start">
-            <div className="lg:col-span-5">
+      <section id="companies" className="py-24 lg:py-32 px-6 lg:px-16 bg-secondary bg-[#cbfbf0]">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <div data-aos="fade-up">
               <Eyebrow>For companies</Eyebrow>
-              <h2 className="mt-6 font-display text-3xl md:text-4xl lg:text-5xl leading-tight">
-                Empower your people&nbsp;<br />
+              <h2 className="mt-6 font-display text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-foreground text-balance">
+                Empower your people&nbsp;
+                <br />
                 Validate your impact&nbsp;
               </h2>
-              <div className="mt-6 space-y-6 text-base text-muted-foreground leading-relaxed">
-                <p>
-                  We co-design a field experience with our scientific partners, run it with
-                  your team on a real Mediterranean site, validate the data with researchers,
-                  and deliver reporting your sustainability team can actually use.
-                </p>
-                <p>
-                  Our program combines professional development with real-world environmental action. Your team collects data on-site, while your organization gain&nbsp; verified data required by ESG standards.&nbsp;
-                </p>
-                <p>
-                  We bridge the gap between HR development and ESG strategy. By co-designing immersive Mediterranean field experiences, we help your team gain hands-on expertise while delivering the verified, audit-ready data your sustainability team needs.
-                </p>
-                <p>
-                  We bridge HR and ESG through science-backed field experiences. We co-design the research, run the onsite program, and deliver data your sustainability team can rely on.
+              <p className="mt-8 text-xl text-muted-foreground leading-relaxed font-serif">
+                Our program combines professional development with real-world environmental action. Your team collects data on-site, while your organization gain&nbsp; verified data required by ESG standards.&nbsp;
+              </p>
+              
+              <div className="mt-12 space-y-8">
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
+                    <Users className="w-6 h-6 text-accent" />
+                  </div>
+                  <div>
+                    <h4 className="font-display text-xl text-foreground">Engagement</h4>
+                    <p className="mt-2 text-muted-foreground leading-relaxed">
+                      Immersive field experiences that build stronger teams.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
+                    <Database className="w-6 h-6 text-accent" />
+                  </div>
+                  <div>
+                    <h4 className="font-display text-xl text-foreground">Data</h4>
+                    <p className="mt-2 text-muted-foreground leading-relaxed">
+                      Field research validated by expert scientific partners.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
+                    <BookOpen className="w-6 h-6 text-accent" />
+                  </div>
+                  <div>
+                    <h4 className="font-display text-xl text-foreground">Capacity building</h4>
+                    <p className="mt-2 text-muted-foreground leading-relaxed">
+                      Turn your people into scientists (or sustainability champions), not just observers.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
+                    <ClipboardCheck className="w-6 h-6 text-accent" />
+                  </div>
+                  <div>
+                    <h4 className="font-display text-xl text-foreground">Reporting&nbsp;</h4>
+                    <p className="mt-2 text-muted-foreground leading-relaxed">
+                      A closer understanding of environments, communities and cultures.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-12">
+                <Button size="lg" className="rounded-full px-8 py-6 text-base group">
+                  Book a consultation
+                  <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </div>
+            </div>
+            
+            <div className="relative aspect-[4/5] lg:aspect-square" data-aos="zoom-in">
+              <div className="absolute inset-0 bg-accent/5 rounded-2xl overflow-hidden">
+                <img 
+                  src="/assets/experience-community.jpg" 
+                  alt="Mediterranean field experience" 
+                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                />
+              </div>
+              <div className="absolute -bottom-6 -left-6 bg-white p-8 rounded-xl shadow-xl max-w-xs hidden md:block" data-aos="fade-up" data-aos-delay="200">
+                <p className="font-display text-2xl leading-tight text-foreground italic">
+                  "Inspire your people&nbsp;
+                  <br />
+                  Protect the Mediterranean"
                 </p>
               </div>
             </div>
-
-            <div className="lg:col-span-7 grid sm:grid-cols-2 gap-6">
-              {[
-                {
-                  icon: Heart,
-                  title: "Meaningful engagement",
-                  body: "Field experiences your  people will remember",
-                },
-                {
-                  icon: Microscope,
-                  title: "Science-based credibility",
-                  body: "Protocols co-designed with researchers, validated by scientific partners.",
-                },
-                {
-                  icon: LineChart,
-                  title: "ESG alignment",
-                  body: "Primary data and KPIs mapped to ESRS and CSRD frameworks.",
-                },
-                {
-                  icon: GraduationCap,
-                  title: "Learning & skills",
-                  body: "A closer understanding of environments, communities and cultures.",
-                },
-              ].map(({ icon: Icon, title, body }) => (
-                <div key={title} className="bg-background rounded-2xl p-7 border border-border">
-                  <Icon className="size-5 text-accent" />
-                  <h3 className="mt-5 font-display text-xl text-foreground">{title}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{body}</p>
-                </div>
-              ))}
-            </div>
           </div>
+        </div>
 
+        <div className="max-w-7xl mx-auto">
           {/* Reporting outputs */}
           <div className="mt-20 pt-16 border-t border-border">
             <div className="max-w-2xl mb-12">
