@@ -14,9 +14,12 @@ import {
   Building2,
   UtensilsCrossed,
   HeartHandshake,
-  
+  Database,
+  BookOpen,
+  ClipboardCheck,
   Sparkles,
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-underwater.png";
 import communityImage from "@/assets/experience-community.jpg";
 import territoryImage from "@/assets/experience-territory.jpg";
