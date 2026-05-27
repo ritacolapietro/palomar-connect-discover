@@ -52,7 +52,7 @@ export const Route = createFileRoute("/")({
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
-    <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-accent">
+    <span className="text-[10px] uppercase tracking-[0.22em] text-accent font-mono">
       {children}
     </span>
   );
@@ -66,17 +66,17 @@ function HomePage() {
         <div className="grid lg:grid-cols-2 min-h-[88vh]">
           <div className="flex flex-col justify-center px-6 lg:px-16 py-20 lg:py-0 animate-fade-up">
             <Eyebrow>For HR · ESG · Culture leaders</Eyebrow>
-            <h1 className="mt-6 font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-foreground text-balance">
+            <h1 className="mt-6 font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-foreground text-balance font-sans">
               Engage your people.
               <br />
               <span className="italic">Understand</span> the
               <br />
               Mediterranean.
             </h1>
-            <p className="mt-8 max-w-md text-lg text-muted-foreground text-pretty leading-relaxed">
+            <p className="mt-8 max-w-md text-muted-foreground text-pretty leading-relaxed font-serif text-xl">
               Palomar designs corporate experiences that turn employee engagement into
               meaningful action — connecting your teams to the territories, communities and
-              cultures of the Mediterranean.
+              cultures of the Mediterranean. cwdfw
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
               <a
@@ -262,7 +262,7 @@ function HomePage() {
             </div>
             <div className="relative py-20 lg:py-24 px-8 lg:px-16 text-primary-foreground grid lg:grid-cols-12 gap-12">
               <div className="lg:col-span-4">
-                <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-accent">
+                <span className="text-[10px] uppercase tracking-[0.22em] text-accent font-mono">
                   The method
                 </span>
                 <h3 className="mt-4 font-display text-3xl md:text-4xl leading-tight italic">
