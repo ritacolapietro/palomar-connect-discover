@@ -64,9 +64,9 @@ function HomePage() {
       {/* 1. HERO */}
       <section className="relative">
         <div className="grid lg:grid-cols-2 min-h-[88vh]">
-          <div className="flex flex-col justify-center px-6 lg:px-16 py-20 lg:py-0 animate-fade-up bg-teal-100 font-sans text-center font-bold">
-            <Eyebrow>​</Eyebrow>
-            <h1 className="mt-6 font-display md:text-6xl lg:text-7xl leading-[1.05] text-foreground text-balance font-sans font-bold text-xl bg-teal-200">
+          <div className="flex flex-col justify-center px-6 lg:px-16 py-20 lg:py-0 animate-fade-up">
+            <Eyebrow>For HR · ESG · Culture leaders</Eyebrow>
+            <h1 className="mt-6 font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-foreground text-balance font-sans">
               Engage your people.
               <br />
               <span className="italic">Understand</span> the
@@ -76,7 +76,7 @@ function HomePage() {
             <p className="mt-8 max-w-md text-muted-foreground text-pretty leading-relaxed font-serif text-xl">
               Palomar designs corporate experiences that turn employee engagement into
               meaningful action — connecting your teams to the territories, communities and
-              cultures of the Mediterranean. 
+              cultures of the Mediterranean. cwdfw
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
               <a
